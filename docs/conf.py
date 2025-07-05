@@ -5,7 +5,7 @@ sys.path.insert(0, os.path.abspath(".."))
 
 project = "snmpwalk-parser"
 author = "Kunal Raut"
-release = "1.0.0"
+release = "1.0.1"
 
 extensions = [
     "sphinx.ext.autodoc",
