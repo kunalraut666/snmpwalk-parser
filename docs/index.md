@@ -254,7 +254,7 @@ The package includes a comprehensive command-line interface for all operations.
 The CLI is automatically available after installing the package:
 
 ```bash
-snmp-cli --help
+snmpwalk-parser --help
 ```
 
 ### Commands
@@ -263,94 +263,94 @@ snmp-cli --help
 
 ```bash
 # Basic walk
-snmp-cli walk 192.168.1.1 -c public
+snmpwalk-parser walk 192.168.1.1 -c public
 
 # Walk specific OID
-snmp-cli walk 192.168.1.1 -c public -o 1.3.6.1.2.1.1
+snmpwalk-parser walk 192.168.1.1 -c public -o 1.3.6.1.2.1.1
 
 # Save to file
-snmp-cli walk 192.168.1.1 -c public --output results.json --format json
+snmpwalk-parser walk 192.168.1.1 -c public --output results.json --format json
 
 # Show system information
-snmp-cli walk 192.168.1.1 -c public --show-system
+snmpwalk-parser walk 192.168.1.1 -c public --show-system
 
 # Show interface information
-snmp-cli walk 192.168.1.1 -c public --show-interfaces
+snmpwalk-parser walk 192.168.1.1 -c public --show-interfaces
 ```
 
 #### SNMP Get
 
 ```bash
 # Get specific OIDs
-snmp-cli get 192.168.1.1 -c public -o sysDescr.0 sysName.0
+snmpwalk-parser get 192.168.1.1 -c public -o sysDescr.0 sysName.0
 
 # Export to CSV
-snmp-cli get 192.168.1.1 -c public -o sysDescr.0 --output system.csv --format csv
+snmpwalk-parser get 192.168.1.1 -c public -o sysDescr.0 --output system.csv --format csv
 ```
 
 #### Bulk Walk
 
 ```bash
 # Bulk walk for better performance
-snmp-cli bulk 192.168.1.1 -c public -o 1.3.6.1.2.1.2
+snmpwalk-parser bulk 192.168.1.1 -c public -o 1.3.6.1.2.1.2
 
 # Custom repetitions
-snmp-cli bulk 192.168.1.1 -c public -o 1.3.6.1.2.1.2 -m 25
+snmpwalk-parser bulk 192.168.1.1 -c public -o 1.3.6.1.2.1.2 -m 25
 ```
 
 #### Parse Existing Output
 
 ```bash
 # Parse saved SNMP output
-snmp-cli parse -f snmpwalk_output.txt
+snmpwalk-parser parse -f snmpwalk_output.txt
 
 # Filter by pattern
-snmp-cli parse -f output.txt --filter "ifDescr.*"
+snmpwalk-parser parse -f output.txt --filter "ifDescr.*"
 
 # Export parsed data
-snmp-cli parse -f output.txt --output parsed.json --format json
+snmpwalk-parser parse -f output.txt --output parsed.json --format json
 ```
 
 #### Network Discovery
 
 ```bash
 # Discover SNMP hosts
-snmp-cli discover 192.168.1.0/24 -c public
+snmpwalk-parser discover 192.168.1.0/24 -c public
 
 # Custom timeout
-snmp-cli discover 10.0.0.0/16 -c public -t 10
+snmpwalk-parser discover 10.0.0.0/16 -c public -t 10
 
 # Save discovered hosts
-snmp-cli discover 192.168.1.0/24 -c public --output hosts.json
+snmpwalk-parser discover 192.168.1.0/24 -c public --output hosts.json
 ```
 
 #### Parallel Operations
 
 ```bash
 # Parallel walk on multiple hosts
-snmp-cli parallel -H 192.168.1.1 192.168.1.2 192.168.1.3 -c public
+snmpwalk-parser parallel -H 192.168.1.1 192.168.1.2 192.168.1.3 -c public
 
 # Custom worker count
-snmp-cli parallel -H 192.168.1.{1..10} -c public -w 20
+snmpwalk-parser parallel -H 192.168.1.{1..10} -c public -w 20
 
 # Export results
-snmp-cli parallel -H 192.168.1.1 192.168.1.2 -c public --output parallel.json
+snmpwalk-parser parallel -H 192.168.1.1 192.168.1.2 -c public --output parallel.json
 ```
 
 ### Global Options
 
 ```bash
 # Verbose output
-snmp-cli walk 192.168.1.1 -c public -v
+snmpwalk-parser walk 192.168.1.1 -c public -v
 
 # Disable colors
-snmp-cli walk 192.168.1.1 -c public --no-color
+snmpwalk-parser walk 192.168.1.1 -c public --no-color
 
 # Custom timeout and retries
-snmp-cli walk 192.168.1.1 -c public -t 60 -r 5
+snmpwalk-parser walk 192.168.1.1 -c public -t 60 -r 5
 
 # SNMP version
-snmp-cli walk 192.168.1.1 -c public -V 1
+snmpwalk-parser walk 192.168.1.1 -c public -V 1
 ```
 
 ## API Reference
