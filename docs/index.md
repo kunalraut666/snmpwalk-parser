@@ -6,6 +6,8 @@
 
 A comprehensive Python package for parsing and analyzing SNMP walk outputs with advanced features for network discovery, parallel operations, and structured data export.
 
+🔧 This tool is focused on parsing actual SNMP command-line output — not compiling MIBs.
+
 ## Table of Contents
 
 - [Features](#features)
@@ -795,6 +797,8 @@ async def main():
 # asyncio.run(main())
 ```
 
+[![Watch Demo](https://img.shields.io/badge/Watch-Demo-orange)](https://www.youtube.com/watch?v=NYHgoyZdDkc)
+
 ## Contributing
 
 We welcome contributions! Please see our contributing guidelines:
@@ -869,8 +873,8 @@ pytest tests/test_cli.py
 
 ## License
 
-This project is licensed under the MIT License - see the This project is licensed under the MIT License - see the [LICENSE](https://github.com/kunalraut666/snmpwalk-parser/blob/main/LICENSE) file for details.
- file for details.
+This project is licensed under the MIT License — see the [LICENSE](https://github.com/kunalraut666/snmpwalk-parser/blob/main/LICENSE) file for details.
+
 
 ## Support
 

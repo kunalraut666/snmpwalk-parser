@@ -1,6 +1,7 @@
 # snmpwalk-parser
 
-A comprehensive and extensible SNMP parsing library built in Python. It provides a high-level API and CLI for converting raw SNMP command-line output into structured data for easy inspection, transformation, and export.
+A comprehensive and extensible SNMP parsing library built in Python. It provides a high-level API and CLI for converting raw SNMP command-line output into structured data for easy inspection, transformation, and export. Designed specifically to parse raw outputs from `snmpwalk`, `snmpget`, and `snmpbulkwalk`, not MIB files.
+
 
 [![PyPI version](https://img.shields.io/pypi/v/snmpwalk-parser)](https://pypi.org/project/snmpwalk-parser/)
 [![Python versions](https://img.shields.io/pypi/pyversions/snmpwalk-parser)](https://pypi.org/project/snmpwalk-parser/)
@@ -33,6 +34,7 @@ A comprehensive and extensible SNMP parsing library built in Python. It provides
 
 ## ✨ Features
 
+- 📄 **Raw SNMP Output Parsing**: Parses saved output from `snmpwalk`, `snmpget`, and `snmpbulkwalk` — unlike tools like `pysmi`, this focuses on interpreting command-line SNMP results, not compiling MIBs.
 - 🔍 **Multi-format Support**: Parse output from `snmpwalk`, `snmpget`, and `snmpbulkwalk`
 - 📊 **Smart Analysis**: Automatically extract system info and interface summaries
 - 🗂️ **Table Organization**: Group entries into SNMP tables for better structure
@@ -636,6 +638,24 @@ runner = SNMPRunner(debug=True)
 - Consider caching for repeated queries
 
 ---
+
+---
+
+## 🆚 Comparison with pysmi / pysnmp
+
+While tools like [`pysmi`](https://github.com/etingof/pysmi) and [`pysnmp`](https://github.com/etingof/pysnmp) focus on MIB compilation and low-level SNMP protocol handling respectively, `snmpwalk-parser` is purpose-built for **parsing real-world SNMP command-line outputs** like those produced by `snmpwalk`, `snmpget`, and `snmpbulkwalk`.
+
+| Feature | pysmi | snmpwalk-parser |
+|--------|-------|------------------|
+| MIB file compilation | ✅ | ❌ |
+| Parses `snmpwalk` command output | ❌ | ✅ |
+| CLI-based parsing & export | ❌ | ✅ |
+| System/interface summary | ❌ | ✅ |
+| Network discovery & parallel walk | ❌ | ✅ |
+
+Use this tool when you're dealing with actual `snmpwalk` results and want them in structured formats (JSON, CSV, XML), not MIB files.
+
+
 
 ## 📄 License
 
