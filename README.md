@@ -2,11 +2,11 @@
 
 A comprehensive and extensible SNMP parsing library built in Python. It provides a high-level API and CLI for converting raw SNMP command-line output into structured data for easy inspection, transformation, and export.
 
-![PyPI](https://img.shields.io/pypi/v/snmpwalk-parser?color=blue)
+![PyPI](https://img.shields.io/pypi/v/snmpwalk-parser)
 ![Python Versions](https://img.shields.io/pypi/pyversions/snmpwalk-parser)
 ![License](https://img.shields.io/github/license/kunalraut/snmpwalk-parser)
 ![Tests](https://img.shields.io/github/actions/workflow/status/kunalraut/snmpwalk-parser/python-tests.yml?label=tests)
-![Downloads](https://img.shields.io/pypi/dm/snmpwalk-parser)
+![Downloads](https://static.pepy.tech/personalized-badge/snmpwalk-parser?period=total&units=international_system&left_color=black&right_color=orange&left_text=Downloads)
 
 ---
 
