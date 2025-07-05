@@ -225,12 +225,16 @@ snmpwalk-parser get \
   --oids sysDescr.0 sysUpTime.0 sysContact.0
 
 # Bulk walk with custom parameters
-snmpwalk-parser bulkwalk \
+snmpwalk-parser bulk \
   --host 192.168.1.1 \
   --community public \
   --oid ifTable \
   --max-repetitions 25
 ```
+
+## 🎥 Demo
+
+![snmpwalk-parser-demo](docs/assets/snmpwalk-parser-cli-demo.mp4)
 
 ### Parallel Operations
 
@@ -688,7 +692,15 @@ SOFTWARE.
 
 ---
 
-**⭐ Star the repository**: If you find this project helpful, please consider starring it on GitHub!
+## ⭐ Support
+
+If you find this project helpful:
+
+- 🌟 **Star** this repo
+- 🧑‍💻 Contribute code or ideas
+- 🐛 Report issues / suggest features
+- 📣 Share with your team
+
 
 **🗣️ Spread the word**: Share this project with your network operations and development teams!
 

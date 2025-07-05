@@ -19,7 +19,7 @@ def read_requirements():
 
 setup(
     name="snmpwalk-parser",
-    version="1.0.0",
+    version="1.0.1",
     packages=find_packages(),
     author="Kunal Raut",
     author_email="kunalraut489@gmail.com",

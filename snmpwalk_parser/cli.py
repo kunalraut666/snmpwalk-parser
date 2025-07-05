@@ -81,29 +81,29 @@ def create_parser():
         epilog="""
 Examples:
   # Basic snmpwalk
-  snmp-cli walk 192.168.1.1 -c public
+  snmpwalk-parser walk 192.168.1.1 -c public
 
   # Walk specific OID
-  snmp-cli walk 192.168.1.1 -c public -o 1.3.6.1.2.1.1
+  snmpwalk-parser walk 192.168.1.1 -c public -o 1.3.6.1.2.1.1
 
   # Get specific OIDs
-  snmp-cli get 192.168.1.1 -c public -o sysDescr.0 sysName.0
+  snmpwalk-parser get 192.168.1.1 -c public -o sysDescr.0 sysName.0
 
   # Bulk walk for faster operations
-  snmp-cli bulk 192.168.1.1 -c public -o 1.3.6.1.2.1.2
+  snmpwalk-parser bulk 192.168.1.1 -c public -o 1.3.6.1.2.1.2
 
   # Parse existing snmpwalk output
-  snmp-cli parse -f snmpwalk_output.txt
+  snmpwalk-parser parse -f snmpwalk_output.txt
 
   # Discover SNMP hosts in network
-  snmp-cli discover 192.168.1.0/24 -c public
+  snmpwalk-parser discover 192.168.1.0/24 -c public
 
   # Parallel walk on multiple hosts
-  snmp-cli parallel -H 192.168.1.1 192.168.1.2 192.168.1.3 -c public
+  snmpwalk-parser parallel -H 192.168.1.1 192.168.1.2 192.168.1.3 -c public
 
   # Export results to different formats
-  snmp-cli walk 192.168.1.1 -c public --output results.json --format json
-  snmp-cli walk 192.168.1.1 -c public --output results.csv --format csv
+  snmpwalk-parser walk 192.168.1.1 -c public --output results.json --format json
+  snmpwalk-parser walk 192.168.1.1 -c public --output results.csv --format csv
         """
     )
     

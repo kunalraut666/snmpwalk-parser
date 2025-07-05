@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "snmpwalk-parser"
-version = "1.0.0"
+version = "1.0.1"
 description = "A comprehensive SNMP parser package for extracting and analyzing SNMP walk data"
 authors = [
     {name = "Kunal Raut", email = "kunalraut489@gmail.com"}
