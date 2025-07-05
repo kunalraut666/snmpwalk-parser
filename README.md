@@ -536,9 +536,6 @@ markers =
 ## 📖 Documentation
 
 - **Full Documentation**: https://snmpwalk-parser.readthedocs.io/
-- **API Reference**: https://snmpwalk-parser.readthedocs.io/en/latest/api/
-- **Examples**: https://github.com/kunalraut/snmpwalk-parser/tree/main/examples
-- **Changelog**: https://github.com/kunalraut/snmpwalk-parser/blob/main/CHANGELOG.md
 
 ---
 
