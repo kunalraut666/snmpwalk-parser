@@ -5,6 +5,8 @@ htmlcov/
 .nox/
 .cache/
 pytest_cache/
+tests/
+_build/
 
 # Packaging
 dist/

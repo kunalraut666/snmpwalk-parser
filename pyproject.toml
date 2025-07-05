@@ -67,11 +67,11 @@ test = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/kunalraut/snmpwalk-parser"
+Homepage = "https://github.com/kunalraut666/snmpwalk-parser"
 Documentation = "https://snmpwalk-parser.readthedocs.io/"
-Repository = "https://github.com/kunalraut/snmpwalk-parser"
-Issues = "https://github.com/kunalraut/snmpwalk-parser/issues"
-Changelog = "https://github.com/kunalraut/snmpwalk-parser/blob/main/CHANGELOG.md"
+Repository = "https://github.com/kunalraut666/snmpwalk-parser"
+Issues = "https://github.com/kunalraut666/snmpwalk-parser/issues"
+Changelog = "https://github.com/kunalraut666/snmpwalk-parser/blob/main/CHANGELOG.md"
 
 [project.scripts]
 snmpwalk-parser = "snmpwalk_parser.cli:main"

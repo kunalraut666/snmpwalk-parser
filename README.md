@@ -671,10 +671,10 @@ SOFTWARE.
 ## 🔗 Links
 
 - 📦 **PyPI**: https://pypi.org/project/snmpwalk-parser/
-- 🐙 **GitHub**: https://github.com/kunalraut/snmpwalk-parser
+- 🐙 **GitHub**: https://github.com/kunalraut666/snmpwalk-parser
 - 📚 **Documentation**: https://snmpwalk-parser.readthedocs.io/
-- 🐛 **Issues**: https://github.com/kunalraut/snmpwalk-parser/issues
-- 💬 **Discussions**: https://github.com/kunalraut/snmpwalk-parser/discussions
+- 🐛 **Issues**: https://github.com/kunalraut666/snmpwalk-parser/issues
+- 💬 **Discussions**: https://github.com/kunalraut666/snmpwalk-parser/discussions
 
 ---
 
