@@ -869,7 +869,8 @@ pytest tests/test_cli.py
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the This project is licensed under the MIT License - see the [LICENSE](https://github.com/kunalraut666/snmpwalk-parser/blob/main/LICENSE) file for details.
+ file for details.
 
 ## Support
 
