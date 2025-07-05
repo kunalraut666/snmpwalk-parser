@@ -1,0 +1,10 @@
+include README.md
+include LICENSE
+
+# Include example files if present
+recursive-include examples *.ipynb
+recursive-include examples *.py
+
+# Exclude tests and docs from sdist
+prune tests
+prune docs

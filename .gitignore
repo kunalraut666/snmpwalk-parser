@@ -1,0 +1,14 @@
+# Test & Coverage
+.coverage
+htmlcov/
+.tox/
+.nox/
+.cache/
+pytest_cache/
+
+# Packaging
+dist/
+build/
+*.egg-info/
+snmpwalk_parser.egg-info/
+snmpenv/
