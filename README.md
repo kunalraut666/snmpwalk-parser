@@ -234,7 +234,10 @@ snmpwalk-parser bulk \
 
 ## 🎥 Demo
 
-![snmpwalk-parser-demo](docs/assets/snmpwalk-parser-cli-demo.mp4)
+[![Watch the demo](https://img.youtube.com/vi/NYHgoyZdDkc/0.jpg)](https://www.youtube.com/watch?v=NYHgoyZdDkc)
+
+👉 **Click the thumbnail above or [watch on YouTube](https://www.youtube.com/watch?v=NYHgoyZdDkc)**  
+
 
 ### Parallel Operations
 
