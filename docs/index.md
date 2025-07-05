@@ -856,7 +856,7 @@ pytest tests/test_cli.py
 
 ## Changelog
 
-### Version 1.0.0
+### Version 1.0.1
 - Initial release
 - Basic SNMP parsing functionality
 - Live SNMP operations
